@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.3">
+      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7a952b86.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.20d9efc8.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
@@ -515,7 +515,7 @@
                 
                   
 
-  <a href="https://github.com/kraken-build/kraken-std/blob/develop/docs/content/helm.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/kraken-build/kraken-std/blob/None/docs/content/helm.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
@@ -541,28 +541,28 @@
 <div class="highlight"><pre><span></span><code><span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
 <span class="k">class</span> <span class="nc">HelmSettings</span><span class="p">()</span>
 </code></pre></div>
-<p><a href="https://github.com/kraken-build/kraken-std/blob/develop/docs/../src/kraken/std/helm/__init__.py#L16">[view_source]</a></p>
+<p><a href="https://github.com/kraken-build/kraken-std/blob/fce81ebce2727324a832fe6ec380f39268d667ec/docs/../src/kraken/std/helm/__init__.py#L16">[view_source]</a></p>
 <p>Project-specific settings for Helm.</p>
 <p><a id="kraken.std.helm.helm_settings"></a></p>
 <p><a id="pydoc:kraken.std.helm.helm_settings"></a></p>
 <h4 id="helm_settings">helm_settings</h4>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">helm_settings</span><span class="p">(</span><span class="n">project</span><span class="p">:</span> <span class="n">Project</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">HelmSettings</span>
 </code></pre></div>
-<p><a href="https://github.com/kraken-build/kraken-std/blob/develop/docs/../src/kraken/std/helm/__init__.py#L29">[view_source]</a></p>
+<p><a href="https://github.com/kraken-build/kraken-std/blob/fce81ebce2727324a832fe6ec380f39268d667ec/docs/../src/kraken/std/helm/__init__.py#L29">[view_source]</a></p>
 <p>Create or get Helm settings for the project.</p>
 <p><a id="kraken.std.helm.HelmPackageTask"></a></p>
 <p><a id="pydoc:kraken.std.helm.HelmPackageTask"></a></p>
 <h2 id="class-helmpackagetask">Class HelmPackageTask</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">HelmPackageTask</span><span class="p">(</span><span class="n">Task</span><span class="p">)</span>
 </code></pre></div>
-<p><a href="https://github.com/kraken-build/kraken-std/blob/develop/docs/../src/kraken/std/helm/__init__.py#L42">[view_source]</a></p>
+<p><a href="https://github.com/kraken-build/kraken-std/blob/fce81ebce2727324a832fe6ec380f39268d667ec/docs/../src/kraken/std/helm/__init__.py#L42">[view_source]</a></p>
 <p>Packages a Helm chart.</p>
 <p><a id="kraken.std.helm.HelmPushTask"></a></p>
 <p><a id="pydoc:kraken.std.helm.HelmPushTask"></a></p>
 <h2 id="class-helmpushtask">Class HelmPushTask</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">HelmPushTask</span><span class="p">(</span><span class="n">Task</span><span class="p">)</span>
 </code></pre></div>
-<p><a href="https://github.com/kraken-build/kraken-std/blob/develop/docs/../src/kraken/std/helm/__init__.py#L68">[view_source]</a></p>
+<p><a href="https://github.com/kraken-build/kraken-std/blob/fce81ebce2727324a832fe6ec380f39268d667ec/docs/../src/kraken/std/helm/__init__.py#L68">[view_source]</a></p>
 <p>Pushes a Helm chart to a Helm registry. Supports OCI and HTTP(S) registries.</p>
 <p><a id="kraken.std.helm.HelmPushTask.chart_tarball"></a></p>
 <p><a id="pydoc:kraken.std.helm.HelmPushTask.chart_tarball"></a></p>
@@ -668,7 +668,7 @@ constructed when pushing to an <code>oci://</code> registry and reading the prop
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tracking", "navigation.top", "toc.follow"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.37e9125f.min.js"></script>
+      <script src="../assets/javascripts/bundle.078830c0.min.js"></script>
       
     
   </body>
