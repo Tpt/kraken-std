@@ -20,6 +20,7 @@ class PylintTask(EnvironmentAwareDispatchTask):
         command += self.additional_args.get()
         return command
 
+
 def pylint(*, name: str = "python.pylint", project: Project | None = None, **kwargs: Any) -> PylintTask:
     project = project or Project.current()
     return project.do(name, PylintTask, group="lint", **kwargs)
