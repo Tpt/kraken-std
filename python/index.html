@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.6">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
     
     
       
@@ -679,7 +679,7 @@ registered in the build script are made available to the installation process.</
         <span class="n">tests_directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
         <span class="n">always_use_managed_env</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">PythonSettings</span>
 </code></pre></div>
-<p><a href="https://github.com/kraken-build/kraken-std/blob/6ef9b8d2cdc70a3e67c7f8f3c20cbe6063b970b8/docs/../src/kraken/std/python/settings.py#L116">[view_source]</a></p>
+<p><a href="https://github.com/kraken-build/kraken-std/blob/5ebac13ee1d11abca28e3bdf418b980715948bb6/docs/../src/kraken/std/python/settings.py#L116">[view_source]</a></p>
 <p>Read the Python settings for the given or current project and optionally update attributes.</p>
 <p><strong>Arguments</strong>:</p>
 <ul>
@@ -693,14 +693,14 @@ registered in the build script are made available to the installation process.</
 <div class="highlight"><pre><span></span><code><span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
 <span class="k">class</span> <span class="nc">PythonSettings</span><span class="p">()</span>
 </code></pre></div>
-<p><a href="https://github.com/kraken-build/kraken-std/blob/6ef9b8d2cdc70a3e67c7f8f3c20cbe6063b970b8/docs/../src/kraken/std/python/settings.py#L26">[view_source]</a></p>
+<p><a href="https://github.com/kraken-build/kraken-std/blob/5ebac13ee1d11abca28e3bdf418b980715948bb6/docs/../src/kraken/std/python/settings.py#L26">[view_source]</a></p>
 <p>Project-global settings for Python tasks.</p>
 <p><a id="kraken.std.python.settings.PythonSettings.get_tests_directory"></a></p>
 <p><a id="pydoc:kraken.std.python.settings.PythonSettings.get_tests_directory"></a></p>
 <h4 id="get_tests_directory">get_tests_directory</h4>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_tests_directory</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Path</span> <span class="o">|</span> <span class="kc">None</span>
 </code></pre></div>
-<p><a href="https://github.com/kraken-build/kraken-std/blob/6ef9b8d2cdc70a3e67c7f8f3c20cbe6063b970b8/docs/../src/kraken/std/python/settings.py#L36">[view_source]</a></p>
+<p><a href="https://github.com/kraken-build/kraken-std/blob/5ebac13ee1d11abca28e3bdf418b980715948bb6/docs/../src/kraken/std/python/settings.py#L36">[view_source]</a></p>
 <p>Returns :attr:<code>tests_directory</code> if it is set. If not, it will look for the following directories and
 return the first that exists: <code>test/</code>, <code>tests/</code>, <code>src/test/</code>, <code>src/tests/</code>. The determined path will be
 relative to the project directory.</p>
@@ -709,7 +709,7 @@ relative to the project directory.</p>
 <h4 id="get_tests_directory_as_args">get_tests_directory_as_args</h4>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_tests_directory_as_args</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
 </code></pre></div>
-<p><a href="https://github.com/kraken-build/kraken-std/blob/6ef9b8d2cdc70a3e67c7f8f3c20cbe6063b970b8/docs/../src/kraken/std/python/settings.py#L48">[view_source]</a></p>
+<p><a href="https://github.com/kraken-build/kraken-std/blob/5ebac13ee1d11abca28e3bdf418b980715948bb6/docs/../src/kraken/std/python/settings.py#L48">[view_source]</a></p>
 <p>Returns a list with a single item that is the test directory, or an empty list. This is convenient
 when constructing command-line arguments where you want to pass the test directory if it exists.</p>
 <p><a id="kraken.std.python.settings.PythonSettings.add_package_index"></a></p>
@@ -724,7 +724,7 @@ when constructing command-line arguments where you want to pass the test directo
                       <span class="n">default</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
                       <span class="n">publish</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">PythonSettings</span>
 </code></pre></div>
-<p><a href="https://github.com/kraken-build/kraken-std/blob/6ef9b8d2cdc70a3e67c7f8f3c20cbe6063b970b8/docs/../src/kraken/std/python/settings.py#L58">[view_source]</a></p>
+<p><a href="https://github.com/kraken-build/kraken-std/blob/5ebac13ee1d11abca28e3bdf418b980715948bb6/docs/../src/kraken/std/python/settings.py#L58">[view_source]</a></p>
 <p>Adds an index to consume Python packages from or publish packages to.</p>
 <p><strong>Arguments</strong>:</p>
 <ul>
@@ -823,10 +823,10 @@ can be used to publish to.</li>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tracking", "navigation.top", "toc.follow"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tracking", "navigation.top", "toc.follow"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.078830c0.min.js"></script>
+      <script src="../assets/javascripts/bundle.8492ddcf.min.js"></script>
       
     
   </body>
