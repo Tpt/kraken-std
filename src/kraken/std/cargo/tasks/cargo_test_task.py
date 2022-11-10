@@ -11,4 +11,4 @@ class CargoTestTask(CargoBuildTask):
 
     def get_cargo_command(self, env: Dict[str, str]) -> List[str]:
         super().get_cargo_command(env)
-        return ["cargo", "test"] + self.additional_args.get()
+        return ["cargo", "test", "--all-features"] + self.additional_args.get()
